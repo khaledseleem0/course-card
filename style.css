@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+:root{
+        --theme:#D69B55;
+}
+
+::selection{
+    color:var(--theme);
+    background-color: rgba(241, 241, 241, 0.644);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-flow: column;
+}
+.title{
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 50px auto;
+    color: var(--theme);
+}
+/* frame work */
+.cpz{
+    text-transform: capitalize;
+}
+.card{
+width: 250px;
+border-radius: 5px;
+box-shadow: 0px 0px 4px 2px hsl(0, 2%, 88%);
+border-bottom: 2px solid white;
+transition: .4s;
+overflow: hidden;
+position: relative;
+background: white;
+}.card:hover{
+    border-bottom: 2px solid var(--theme);
+    animation: card .5s 1 linear;
+
+}
+.card .img-container img{
+ width: 100%;
+ /* height: 100%; */
+}
+.card .content{
+    padding: 15px;
+
+}
+.card .content .name {
+    font-weight: 900;
+    display: block;
+    
+}
+.description{
+    /* font-family: 'Open Sans', sans-serif; */
+        margin: 10px 0px ;
+        display: block;
+
+    }
+.card .content .price {
+    font-weight: 900;
+    display: block;
+
+}.btn{
+    border: 1px solid var(--theme);
+    color:var(--theme);
+    padding: 5px;
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 4px;
+}.btn:hover{
+background-color: var(--theme);
+color: white;
+}
+/* back */
+.thank{
+    background-color: var(--theme);
+    color: white;
+    font-weight: 800;
+    padding: 10px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    /* transform: translate(-53% , -50%) rotate(50deg); */
+height: 100%;
+position: absolute;
+width: 100%;
+right: 0px;
+left: 0px;
+top:0px;
+text-transform: capitalize;
+animation: showback .5s 1 linear;
+z-index: 6;
+transform: translate(-87%,90%) rotate( 45deg);
+transition: 2s;
+}.thank:hover{
+    transform: translate(0%,0%) rotate( 0deg);
+
+}
+   .close{
+width: 40px;
+padding: 3px;
+position: absolute;
+}
+
+
+.teacher img{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    margin: 10px;
+}
+.ul{
+    text-align: left;
+    margin: 20px 0px;
+
+}
+.ul ul{
+    list-style: none;
+    text-align: left;
+
+}.ul ul li {
+    padding: 5px 0%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}.ul ul li svg{
+   font-size: 1em;
+   width: 15px;
+   height: 15px;
+   margin-right: 8px;
+}
+.upper{
+    text-transform: uppercase;
+}
+
+@keyframes showback {
+    0%,100%{
+            opacity: 1;
+    }
+    50%{
+        opacity: 0.8;
+
+    }
+
+}
